@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{-- shows the header, and side menus - which are constant --}}
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    @section('title')
+    @endsection
+  </title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  @!section('notifications')
+
+
+  <div class="app-container
+    @!section('current-class')
+  ">
+    <section id="left-menu">
+      <div class="account-dropdown">
+        <div class="logo">
+          <i class="fa fa-angellist"></i>
+        </div>
+        <div class="name">
+          Martin Miralles
+        </div>
+        <div class="icon">
+          <i class="fa fa-chevron-down"></i>
+        </div>
+      </div>
+      <div class="groups">
+        <div class="group">
+          <div class="title">Title</div>
+          <ul>
+            <li><a href="/logout">Logout</a></li>
+            <li>Link</li>
+            <li>Link</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="content-container">
+      <div class="search-header">
+        <div class="search-box">
+          <input type="text" name="" value="">
+          <div class="icon-section">
+            <div class="noti">
+              <i class="fa fa-bell"></i>
+              <div class="noti-number active">
+                9+
+              </div>
+            </div>
+            <div class="comments">
+              <i class="fa fa-comment"></i>
+              <div class="noti-number active">
+                3
+              </div>
+            </div>
+            <div class="user">
+              <i class="fa fa-user"></i>
+              <div class="noti-number active">
+                1
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-area">
+        @!section('content-area')
+        {{-- refers to home.edge --}}
+      </div>
+    </section>
+    <section id="messenger">
+      <div class="messenger-header">
+        <div class="messenger-icon">
+          <i class="fa fa-comments"></i>
+        </div>
+        <div class="title">
+          Messenger
+        </div>
+        <div class="options-icon">
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+      </div>
+      <div class="users">
+        <div class="users-container">
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user active">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user active">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user active">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user active">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div class="user-img" style="background:
+            url('https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNTAzMTA4OTJeQTJeQWpwZ15BbWU3MDA4NDI2Njk@._V1_UX172_CR0,0,172,256_AL_.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;">
+            </div>
+            <div class="user-name">John Doe</div>
+            <div class="conversation">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <input type="text" name="" value="" placeholder="Search">
+      </div>
+    </section>
+  </div>
+  <script src="/js/components/vendor.js"></script>
+  <script src="/js/components/firstComp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{-- shows the header, and side menus - which are constant --}}
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    @section('title')
+    @endsection
+  </title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  @!section('notifications')
+
+  @!section('content-area')
+
+  <script src="/js/components/vendor.js"></script>
+  <script src="/js/components/mainApp.js"></script>
+</body>
+
+</html>
